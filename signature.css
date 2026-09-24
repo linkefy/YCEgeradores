@@ -1,0 +1,192 @@
+/* YCE signature: industrial controls, inset surfaces and product-led composition. */
+:root{--control-radius:999px;--photo-radius:28px}
+header{inset:16px 24px auto;border:1px solid #ffffff25;border-radius:24px;background:#101010eb;box-shadow:0 12px 45px #0002}
+.header-inner{width:calc(100% - 40px);height:72px;gap:24px}
+.reading-progress{position:absolute;bottom:0;left:24px;right:24px;width:calc(100% - 48px);height:2px}
+nav{gap:8px}nav a{padding:10px 16px;border-radius:999px;transition:background .3s,color .3s}nav a:hover,nav a[aria-current=location]{background:#ffffff12;color:white}
+.header-contact{background:var(--orange);border-color:var(--orange);color:#080808;font-weight:600;min-height:46px;padding:10px 18px}
+.hero .eyebrow{display:inline-flex;border:1px solid #ffffff60;border-radius:999px;padding:9px 15px;letter-spacing:.09em;font-size:.78rem}
+.hero h1{letter-spacing:-.045em}.hero-copy{padding-top:80px}
+.btn,#service-link{position:relative;isolation:isolate;min-height:66px;border:1px solid transparent;padding:10px 12px 10px 26px;gap:20px!important;font-size:.94rem;line-height:1.4;box-shadow:0 6px 0 #00000014;transition:background .35s,color .35s,box-shadow .35s,transform .35s var(--ease)}
+a.btn[href^="https://wa.me/"]:not(.contact-title)::before,#service-link::before{order:2;width:44px;height:44px;flex:0 0 44px;-webkit-mask-size:22px;mask-size:22px;z-index:2}
+.btn::after,#service-link::after{content:"";position:absolute;right:12px;top:50%;width:44px;height:44px;translate:0 -50%;border-radius:50%;background:#00000012;z-index:0;transition:scale .55s var(--ease),background .35s}
+.btn[href^="https://wa.me/"],#service-link{justify-content:space-between}
+.light{background:#fff;color:#111}.orange-btn{background:var(--orange);color:#080808}
+.btn:hover,#service-link:hover{transform:translateY(-3px);box-shadow:0 10px 24px #0002}
+.btn:active,#service-link:active{transform:translateY(1px);box-shadow:none}
+.light:hover{background:#111;color:#fff}.light:hover::after{background:#ffffff20}
+.orange-btn:hover{background:#fff;color:#111}
+.btn:focus-visible,.header-contact:focus-visible{outline-color:#fff;box-shadow:0 0 0 6px #080808}
+.solutions{background:#101010;color:#fff;padding:100px 0 110px;border-radius:36px 36px 0 0;position:relative}
+.solutions .section-top>p{color:#aaa}.section-top{padding-bottom:24px;border-bottom:1px solid #ffffff26}
+.solutions-grid{grid-template-columns:1.1fr 1fr;gap:7%;align-items:center}
+.service-selector h2{font-size:clamp(3rem,5vw,5.6rem);margin-bottom:36px}
+.service-tabs{display:grid;gap:10px}
+.service-tabs button,.service-tabs button:last-child{border:1px solid #ffffff25;border-radius:20px;padding:22px 24px;background:#191919;color:#aaa;transition:background .4s,color .4s,transform .4s var(--ease),border-color .4s}
+.service-tabs button small{font-size:.875rem;color:#999}
+.service-tabs [aria-selected=true]{background:var(--orange);color:#080808;border-color:var(--orange);transform:translateX(12px)}
+.service-tabs [aria-selected=true] small,.service-tabs [aria-selected=true] span{color:#080808}
+.service-tabs button span{display:grid;place-items:center;width:42px;height:42px;border:1px solid currentColor;border-radius:50%;font:400 24px Inter}
+.service-panel{background:#f0f0f0;color:#111;border-radius:28px;padding:14px;min-width:0}
+.service-visual{background:#fff;height:340px;border-radius:18px}.service-visual img{mix-blend-mode:multiply}
+.plate{font-size:.75rem;letter-spacing:.08em}
+.service-description{padding:26px 16px 16px}.service-description .eyebrow{font-size:.875rem;line-height:1.5}.service-description p{font-size:1rem}
+#service-link{margin-top:25px;background:#111;color:#fff;border:0;padding-left:22px}#service-link>span{display:none}#service-link::after{background:#ffffff1c}#service-link:hover{background:var(--orange);color:#111}
+.showroom{background:#101010;padding-top:35px}.showroom-heading{align-items:center}.showroom-heading p{border-left:2px solid var(--orange);padding-left:22px;font-size:1rem}
+.filters{display:inline-flex;border:1px solid #ffffff25;border-radius:999px;padding:6px;gap:4px;margin:40px 0 24px;max-width:100%}
+.filters button{border:0;border-radius:999px;padding:12px 20px;min-height:44px;transition:color .3s,background .3s}
+.filters button[aria-pressed=true]{background:var(--orange);color:#111}.filters button:hover{color:white;background:#ffffff15}.filters button[aria-pressed=true]:hover{background:var(--orange);color:#111}
+.showroom-stage{border-radius:32px;grid-template-columns:1.7fr 1fr;background:#e9e9e9;padding:18px;gap:18px;min-width:0}
+.product-art{border-radius:22px;background:#f7f7f7;min-width:0;padding-top:70px}
+.product-brand-back{top:30px;letter-spacing:-.05em;color:#e3e3e3;font-size:clamp(4rem,8vw,8.5rem)}
+.product-info{border:0;padding:30px 22px}.product-info p{font-size:1rem}.product-info .eyebrow{font-size:.8rem}.product-nav button{border-color:#b8b8b8;border-radius:50%;width:54px;height:54px;transition:background .3s,color .3s,transform .3s}.product-nav button:active{transform:scale(.92)}
+.zoom-button{background:#fff;border:1px solid #ddd;border-radius:999px;padding:12px 20px;box-shadow:0 4px 16px #00000008;transition:background .3s,color .3s}.zoom-button:hover{background:#111;color:#fff}
+.product-thumbs{gap:10px;margin-top:16px}.product-thumbs button{border-radius:18px;padding:8px 8px 12px;transition:background .3s,border-color .3s;line-height:1.5;font-size:.875rem}.product-thumbs img{border-radius:12px;height:85px}.product-thumbs button[aria-pressed=true]{background:#3a2315;border-color:var(--orange)}
+.story{border-top:1px solid #ffffff20}.story-image{border-radius:28px;transform:rotate(-3deg);width:90%;margin-top:42px}.story-tracker{margin-top:30px}.chapter{position:relative;padding-left:28px;border-left:1px solid #333;border-bottom:0}.chapter::before{content:"";position:absolute;left:-2px;top:70px;bottom:70px;width:3px;background:var(--orange);transform:scaleY(0);transform-origin:top;transition:transform .8s var(--ease)}.chapter.active::before{transform:scaleY(1)}.chapter-detail span{border-radius:999px;padding:10px 16px;font-size:.875rem}
+.faq{border-radius:36px 36px 0 0}.faq-list{display:grid;gap:12px;align-content:start}.faq-item{background:#fff;border:1px solid #ddd;border-radius:20px;overflow:hidden}.faq-q{padding:24px;font-size:1rem;align-items:center;border-radius:20px}.faq-q span:last-child{display:grid;place-items:center;flex:0 0 36px;height:36px;border-radius:50%;background:#f3f3f3;color:#111}.faq-q[aria-expanded=true] span:last-child{background:var(--orange)}.faq-a p{font-size:1rem;padding:0 24px 24px}
+.contact{margin:0 20px 20px;border-radius:32px;padding:58px 0 38px}.contact .wrap{width:calc(100% - 72px)}.contact-whatsapp{width:clamp(56px,10vw,140px);height:clamp(56px,10vw,140px)}
+.wa-float{border-radius:999px;padding:15px 22px;background:#fff;color:#111;border:1px solid #ddd;box-shadow:0 8px 32px #0003;transition:transform .3s}.wa-float:hover{transform:translateY(-4px)}
+.footer-grid .btn{display:inline-flex;color:#fff;border:1px solid #555;font-size:.875rem}.footer-grid .btn:hover{background:#fff;color:#111}
+@media(hover:hover) and (pointer:fine){.service-tabs button:not([aria-selected=true]):hover{background:#292929;color:#fff;transform:translateX(5px)}.product-thumbs button:hover{border-color:#888}.social-icon{transition:background .3s,transform .3s}.social-icon:hover{background:#ffffff15;transform:translateY(-2px)}}
+@media(max-width:1100px){header{inset:12px 12px auto}.header-inner{gap:12px}nav a{padding:10px;font-size:.8rem}.hero-copy{width:52%}.solutions-grid{gap:5%}.service-tabs button{padding:20px}.product-info{padding:22px 12px}.btn{font-size:.875rem;gap:12px!important;padding-left:18px}.showroom-stage{grid-template-columns:1.3fr 1fr}}
+@media(max-width:700px){
+ header{inset:10px 10px auto;border-radius:20px}.header-inner{height:62px;width:calc(100% - 24px);gap:8px}.header-contact{min-height:44px;padding:10px}.logo{width:78px}nav{top:72px;border:1px solid #333;border-radius:20px}nav a{font-size:1.05rem;padding:12px}.reading-progress{left:18px;width:calc(100% - 36px)}
+ .hero-copy{width:100%;padding-top:36px}.hero .eyebrow{font-size:.7rem;margin-bottom:20px;padding:8px 12px}.hero .btn{min-height:60px;padding:8px 10px 8px 22px}.hero .btn::after{right:10px}.hero{min-height:850px}.hero-inner{min-height:778px}
+ .solutions,.faq{border-radius:26px 26px 0 0}.solutions{padding:64px 0}.section-top{padding-bottom:20px}.solutions-grid{grid-template-columns:1fr;gap:24px}.service-selector h2{font-size:clamp(2.7rem,10vw,3.8rem)}
+ .service-tabs{display:flex;gap:6px;border:0}.service-tabs button,.service-tabs button:last-child{font-family:Inter,Arial,sans-serif;font-size:clamp(.8rem,3.4vw,1rem);padding:16px 8px;border-radius:999px;justify-content:center;min-width:0;white-space:normal}.service-tabs button span{display:none}.service-tabs [aria-selected=true]{transform:none;box-shadow:none}.service-panel{padding:10px}.service-visual{height:260px}.service-description{padding:22px 12px 12px}
+ .showroom{padding-top:0}.showroom-heading p{max-width:none}.filters{display:flex;gap:2px;border-radius:22px;flex-wrap:wrap;padding:5px}.filters button{flex:1;padding:11px 9px;font-size:.8rem}
+ .showroom-stage{grid-template-columns:1fr;padding:10px;gap:0;border-radius:26px}.product-art{padding:60px 15px 65px}.product-art img{height:240px}.product-brand-back{font-size:clamp(3.5rem,14vw,5rem)}.product-info{padding:28px 14px 20px}.product-thumbs button{min-width:110px}
+ .story-image{width:calc(100% - 12px);margin:34px auto 0;transform:rotate(-2deg)}.chapter{padding:34px 0 34px 22px}.chapter::before{top:34px;bottom:34px}.chapter p{line-height:1.65}.chapter-detail{gap:8px}
+ .faq-q{padding:20px;gap:12px}.faq-a p{padding:0 20px 22px}.contact{margin:0 10px 12px;border-radius:26px;padding-top:36px}.contact .wrap{width:calc(100% - 40px)}.contact-title{gap:14px}.contact-title h2{font-size:clamp(2rem,8vw,3.5rem)}.contact-whatsapp{width:44px;height:44px}.contact-bottom{font-size:.875rem}
+}
+/* Larger brand mark, with compact controls where header space is limited. */
+.header-inner>a:first-child{flex-shrink:0}
+.header-inner .logo{width:160px;height:62px}
+@media(min-width:701px) and (max-width:1000px){.header-inner .logo{width:130px;height:56px}.header-inner{gap:8px}.header-inner nav{gap:0}.header-inner nav a{padding:10px 8px}.header-contact{font-size:0;gap:0;width:44px;min-width:44px;height:44px;padding:10px;justify-content:center}}
+@media(max-width:700px){.header-inner .logo{width:110px;height:50px}.header-inner .header-contact,.header-inner .menu-toggle{flex-shrink:0}}
+@media(prefers-reduced-motion:reduce){.btn:hover,#service-link:hover,.service-tabs button,.wa-float:hover,.contact-title:hover .contact-whatsapp{transform:none!important}.chapter::before{transition:none}.story-image{transform:none}}
+
+/* YCE editorial refinement: clear service labels and restrained details. */
+.hero .eyebrow{border:0;border-radius:0;padding:0;font-size:.875rem;letter-spacing:.08em}
+.hero h1{font-size:clamp(3.3rem,5.6vw,6rem)}
+.hero p{max-width:470px}
+.section-top .eyebrow,.chapter-number{font-size:.875rem;letter-spacing:.08em}
+.btn,#service-link{box-shadow:none}
+.btn:hover,#service-link:hover{box-shadow:none;transform:translateY(-2px)}
+.service-tabs button,.service-tabs button:last-child{border-radius:14px;padding:22px 24px}
+.service-tabs [aria-selected=true]{transform:none;border-left:4px solid #fff}
+.product-nav{gap:10px}
+.product-nav button{width:auto;min-width:82px;height:44px;padding:0 12px;border-radius:12px;font-size:.875rem}
+.product-nav span{flex-shrink:0;letter-spacing:.04em}
+.story-image{transform:none}
+.chapter{min-height:380px;opacity:.75}
+.chapter.active{opacity:1}
+.contact-whatsapp{width:56px;height:56px}
+.contact-title:hover .contact-whatsapp{transform:none}
+.faq-list{gap:0}
+.faq-item{border:0;border-bottom:1px solid #ccc;border-radius:0;background:transparent}
+.faq-q{border-radius:0;padding-left:0;padding-right:0}
+.faq-a p{padding-left:0}
+@media(hover:hover) and (pointer:fine){.service-tabs button:not([aria-selected=true]):hover{transform:none}}
+@media(max-width:700px){
+ .hero h1{font-size:clamp(2.8rem,10vw,4rem)}
+ .hero .eyebrow{padding:0;font-size:.8125rem}
+ .hero p{font-size:1rem}
+ .service-tabs button,.service-tabs button:last-child{padding:16px 8px;font-size:.875rem;border-radius:12px}
+ .service-tabs [aria-selected=true]{border-left:1px solid var(--orange);border-bottom:3px solid #fff}
+ .story-image{transform:none}
+ .chapter{min-height:0;opacity:1}
+ .contact-whatsapp{width:36px;height:36px}
+ .product-nav button{min-width:80px}
+}
+
+@media(prefers-reduced-motion:reduce){.chapter{opacity:1}}
+
+/* Keep the contact WhatsApp mark beside its phone number. */
+.contact-bottom .contact-phone{display:inline-flex;align-items:center;gap:10px;white-space:nowrap;min-height:44px;flex-shrink:0}
+.contact-bottom .contact-phone::before{width:22px;height:22px;flex:0 0 22px}
+.contact-bottom{align-items:center}
+@media(max-width:700px){.contact-bottom{align-items:flex-start}}
+
+/* Supplied YCE service icons, sized consistently for each placement. */
+main img.service-icon{display:block;width:36px;height:36px;flex:0 0 36px;object-fit:contain;border-radius:0}
+.hero-benefits img.service-icon{filter:brightness(0) invert(1)}
+.service-tabs button{gap:18px}
+.service-tabs [aria-selected=true]{background:var(--orange)!important;color:#080808!important;border-color:var(--orange)!important}
+.service-tabs [aria-selected=true] img.service-icon{filter:brightness(0)}
+.chapter-number{display:flex;align-items:center;gap:14px}
+.faq-q .faq-label{display:flex;align-items:center;gap:16px;min-width:0}
+.faq-label img.service-icon{width:28px;height:28px;flex-basis:28px}
+.hero h1{font-size:clamp(3rem,5vw,5.4rem)}
+@media(max-width:700px){
+ .hero h1{font-size:clamp(2rem,7.5vw,3.2rem)}
+ .hero-benefits img.service-icon{width:28px;height:28px;flex-basis:28px}
+ .service-tabs button{flex-direction:column;gap:8px;flex:1}
+ .service-tabs img.service-icon{width:30px;height:30px;flex-basis:30px}
+ .faq-q .faq-label{gap:12px}
+ .faq-label img.service-icon{width:24px;height:24px;flex-basis:24px}
+}
+
+/* Google reviews carousel */
+.reviews{background:var(--paper);color:#171717;padding:86px 0 92px;overflow:hidden}
+.reviews-head{display:flex;justify-content:space-between;align-items:center;gap:24px}
+.reviews-brand{display:flex;align-items:center;gap:16px}.reviews-brand h2{font:600 clamp(1.5rem,2.2vw,2.15rem)/1.1 Inter,Arial,sans-serif;letter-spacing:-.04em;margin:0}
+.google-g{width:30px;height:30px;display:block;flex:0 0 30px}.reviews-link{color:#147bd1;font-size:.95rem;font-weight:600;white-space:nowrap}.reviews-link span{font-size:1.35rem;vertical-align:-1px;margin-left:5px}
+.reviews-rating{display:flex;justify-content:center;margin:22px auto 35px}.reviews-rating img{width:216px;height:108px;object-fit:contain}
+.reviews-window{overflow:hidden;position:relative}.reviews-track{display:flex;gap:14px;width:max-content;animation:reviews-scroll 58s linear infinite;padding:0 0 8px}.reviews-track:hover{animation-play-state:paused}
+.review-card{width:285px;min-height:226px;background:#fff;border-radius:22px;padding:22px 20px 20px;display:flex;flex-direction:column;flex-shrink:0}.review-card header{display:flex;align-items:center;gap:11px;background:transparent;border:0;box-shadow:none;position:static;padding:0}.review-card header strong{font:500 .92rem/1.2 Inter,Arial,sans-serif;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:188px}.review-card header small{display:block;color:#666;font-size:.75rem;margin-top:4px}.review-menu{margin-left:auto;font-size:1.4rem;line-height:1;color:#333}.review-avatar{width:36px;height:36px;border-radius:50%;display:grid;place-items:center;flex:0 0 36px;color:#fff;font-weight:600}.avatar-green{background:#3b9b75}.avatar-orange{background:#e55328}.avatar-blue{background:#457cc5}.avatar-dark{background:#252b32}.avatar-purple{background:#a342b4}.avatar-violet{background:#7654bf}.review-stars{color:#f6aa00;letter-spacing:1px;font-size:.85rem;margin:16px 0 10px}.review-stars time{color:#777;letter-spacing:0;font-size:.72rem;margin-left:7px}.review-card p{font-size:.86rem;line-height:1.45;color:#505050;margin:0;display:-webkit-box;-webkit-line-clamp:6;-webkit-box-orient:vertical;overflow:hidden}
+@keyframes reviews-scroll{from{transform:translateX(0)}to{transform:translateX(calc(-50% - 7px))}}
+@media(max-width:700px){.reviews{padding:58px 0 65px}.reviews-head{align-items:flex-start}.reviews-brand{gap:10px}.reviews-brand h2{font-size:1.25rem}.google-g{width:24px;height:24px;flex-basis:24px}.reviews-link{font-size:.78rem}.reviews-rating{margin:20px auto 24px}.reviews-rating img{width:180px;height:90px}.reviews-track{gap:10px;animation-duration:45s}.review-card{width:270px;min-height:230px;padding:18px}.review-card header strong{max-width:160px}}
+@media(prefers-reduced-motion:reduce){.reviews-track{animation:none;overflow:auto}}
+
+/* Event reels: four reserved video slots and a seamless lateral loop. */
+.events{background:#111;color:#fff;padding:88px 0 96px;overflow:hidden;border-top:1px solid #ffffff20}
+.events-heading{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:42px}
+.events-heading .eyebrow{color:#aaa;margin-bottom:20px}
+.events-heading h2{font-size:clamp(2.8rem,5.2vw,5.2rem)}
+.events-pause{background:transparent;border:1px solid #555;border-radius:999px;color:#fff;padding:12px 18px;font-size:.875rem;min-height:44px;flex-shrink:0}
+.events-pause:hover{border-color:var(--orange);color:var(--orange)}
+.events-window{overflow-x:auto;padding:0 24px 8px;scrollbar-width:thin;scrollbar-color:#666 #111}
+.events-track,.events-group{display:flex;gap:24px;width:max-content;align-items:stretch}
+.events-ready .events-track{animation:event-loop 65s linear infinite;will-change:transform}
+.events-group{flex:none}
+.event-card{width:300px;flex:0 0 300px;border:1px solid #ffffff20;border-radius:24px;overflow:hidden;background:#181818}
+.event-reel{aspect-ratio:9/16;background:linear-gradient(155deg,#303030,#111 80%);position:relative;border-bottom:1px solid #ffffff20}
+.event-reel img.event-instagram{position:absolute;top:20px;right:20px;width:32px;height:32px;border-radius:0;object-fit:contain}
+.event-reel-caption{position:absolute;left:24px;right:24px;bottom:28px;display:grid;gap:10px}
+.event-reel-caption>span{font-size:.75rem;letter-spacing:.15em;color:var(--orange)}
+.event-reel-caption strong{font:500 2rem/1.15 Oswald,Impact,sans-serif}
+.event-reel-caption small{color:#bdbdbd;font-size:.875rem}
+.event-copy{padding:24px}
+.event-location{font-size:.875rem;color:#aaa}
+.event-copy h3{font-size:1.8rem;margin:12px 0 18px}
+.event-copy h3 a:hover{color:var(--orange)}
+.event-copy h3 a::before{display:none!important}
+.event-copy p{font-size:1rem;line-height:1.6;color:#bdbdbd}
+.event-copy p.event-coverage{color:#fff;font-weight:600;margin-bottom:12px}
+.events-paused .events-track,.events-window:hover .events-track,.events-window:focus-within .events-track,.events-window:active .events-track{animation-play-state:paused}
+@keyframes event-loop{to{transform:translateX(calc(-50% - 12px))}}
+.events-reduced .events-track{animation:none;transform:none;will-change:auto}
+.events-reduced .events-copy{display:none}
+@media(max-width:700px){.events{padding:60px 0}.events-heading{align-items:start;flex-direction:column;margin-bottom:28px}.event-card{width:270px;flex-basis:270px}.event-copy{padding:22px}.events-window{padding-left:20px;padding-right:20px}.events-ready .events-track{animation-duration:75s}}
+@media(prefers-reduced-motion:reduce){.events-ready .events-track{animation:none;transform:none}.events-copy{display:none}}
+/* Atendimento YCE: enlarge the supplied generator image within its frame. */
+.story-image{padding:4px;}
+.story-image img{object-fit:contain;}
+/* Event reels use the supplied videos as the visual background. */
+.event-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;background:#111;}
+.event-reel::after{content:"";position:absolute;inset:45% 0 0;background:linear-gradient(transparent,rgba(0,0,0,.8));pointer-events:none;}
+.event-reel-caption,.event-reel img.event-instagram{z-index:1;}
+/* Desktop Atendimento image visibility and video controls. */
+.story-image{display:block;background:#fff;overflow:hidden;opacity:1;visibility:visible;}
+.story-image img{display:block;opacity:1;visibility:visible;mix-blend-mode:normal;object-fit:contain;}
+.event-video{z-index:0;object-fit:cover;cursor:pointer;}
+.event-reel::after{z-index:1;}
+.event-reel-caption,.event-reel img.event-instagram{z-index:2;}
+.footer-credit a{font-weight:800;color:inherit;text-decoration:none;transition:color .2s ease;}
+.footer-credit a:hover,.footer-credit a:focus-visible{color:var(--orange);}
+/* Keep event videos clean and let the native play and volume controls remain unobstructed. */
+.event-reel::after{display:none;}
+.event-reel .event-video{z-index:1;}
+/* Event cards stay fixed; the row is manually scrollable. */
+.events-ready .events-track,.events-static .events-track{animation:none!important;transform:none!important;}

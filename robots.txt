@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ycegeradores.com.br/sitemap.xml

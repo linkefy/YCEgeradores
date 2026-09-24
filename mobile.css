@@ -1,0 +1,106 @@
+/* Mobile hero: portrait artwork with copy and benefits overlaid. */
+.hero-mobile-visual{display:none}
+.footer-credit{margin:24px 0 0;text-align:center;font-size:.875rem;line-height:1.5;color:#aaa}
+
+@media(max-width:700px){
+  html{scroll-padding-top:96px}
+  body{ -webkit-text-size-adjust:100% }
+  main section[id]{scroll-margin-top:12px}
+  .header-inner nav{max-height:calc(100dvh - 100px);overflow-y:auto;overscroll-behavior:contain}
+  .hero{height:auto;min-height:0;padding-top:96px;background-image:none;background-color:#f65300}
+  .hero::before{display:none}
+  .hero-inner{width:100%;height:auto;min-height:177.7vw;display:grid;grid-template-rows:minmax(74vw,auto) 51vw auto;gap:0;background:#e74c00 url('assets/hero-yce-mobile.webp') top center/100% auto no-repeat}
+  .hero-copy{width:100%;padding:20px 20px 0;align-self:start}
+  .hero .eyebrow{margin-bottom:16px;font-size:.8125rem}
+  .hero h1{font-size:clamp(1.75rem,8.8vw,3.5rem);line-height:1.06}
+  .hero p{font-size:1rem;line-height:1.55;margin:16px 0 0}
+  .hero p br{display:none}
+  .hero .btn{display:none}
+  .hero-mobile-visual{display:block;min-height:0;width:100%;background:none;pointer-events:none}
+  .hero-benefits{position:static;inset:auto;width:100%;min-height:0;padding:16px 20px 32px;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 18px;background:linear-gradient(180deg,transparent,rgba(102,29,0,.55));align-items:start;align-content:start;text-shadow:0 1px 5px #682300}
+  .hero-benefits li{align-items:flex-start;gap:10px}
+  .hero-benefits li>div{min-width:0}
+  .hero-benefits strong{font-size:.875rem;line-height:1.4}
+  .hero-benefits li span{font-size:.875rem;line-height:1.4;margin-top:4px}
+  .solutions-grid>*,.showroom-stage>*,.story-layout>*,.faq-grid>*{min-width:0}
+  .service-tabs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}
+  .service-tabs button{width:100%;min-height:76px}
+  .service-visual{height:clamp(280px,85vw,380px);padding:36px 12px 12px}
+  .service-description{padding:22px 10px 12px}
+  .filters{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px}
+  .filters button{min-height:44px}
+  .product-nav{gap:8px}
+  .product-nav button{min-width:0;flex:1;padding:0 8px}
+  .product-thumbs{overscroll-behavior-x:contain}
+  .story h2,.faq h2,.service-selector h2,.events-heading h2{font-size:clamp(2.25rem,9vw,3.5rem)}
+  .chapter h3{font-size:clamp(2rem,8vw,2.6rem)}
+  .faq-q{padding:18px 14px;gap:10px;min-height:60px}
+  .faq-q .faq-label{min-width:0;font-size:1.0625rem;line-height:1.4;gap:10px}
+  .faq-a p{padding:0 14px 22px;line-height:1.6}
+  .reviews-head{flex-direction:column;align-items:flex-start;gap:8px}
+  .reviews-brand h2{line-height:1.25}
+  .reviews-link{display:inline-flex;align-items:center;min-height:44px;font-size:.875rem}
+  .review-card{width:min(82vw,310px)}
+  .review-card header{inset:auto;z-index:auto;backdrop-filter:none;border-radius:0}
+  .review-card header>div{min-width:0;flex:1}
+  .review-card header strong{max-width:100%;white-space:normal}
+  .review-card p{font-size:.9375rem;line-height:1.6}
+  .reviews-window:focus-within .reviews-track,.reviews-window:active .reviews-track{animation-play-state:paused}
+  .event-card{width:clamp(250px,78vw,320px);flex-basis:clamp(250px,78vw,320px)}
+  .events-window{overscroll-behavior-x:contain}
+  .contact-phone{font-size:clamp(1rem,4.6vw,1.4rem);gap:10px;max-width:100%}
+  .footer-grid{grid-template-columns:1fr 1fr;gap:30px 20px}
+  .footer-grid>div:nth-child(n+3){grid-column:1/-1}
+  .footer-grid a{min-height:36px;display:flex;align-items:center}
+  .footer-grid a.btn{min-height:48px;display:inline-flex}
+  .footer-bottom{padding-bottom:0}
+  .footer-credit{margin-top:24px;padding-bottom:calc(58px + env(safe-area-inset-bottom,0px))}
+  .wa-float{width:52px;height:52px;min-width:52px;padding:14px;font-size:0;gap:0;justify-content:center;bottom:calc(12px + env(safe-area-inset-bottom,0px))}
+  dialog{max-height:calc(100dvh - 32px)}
+  .dialog-content .btn{max-width:100%}
+}
+@media(max-width:360px){
+  .hero-benefits{gap:22px 14px}
+  .hero-benefits li{flex-direction:column}
+  .header-inner{gap:5px}
+  .header-inner .logo{width:100px}
+  .footer-grid{grid-template-columns:1fr}
+}
+
+/* Mobile hero finish: blend the artwork into the following dark section and
+   keep the benefit grid compact on smaller screens. */
+@media(max-width:700px){
+  .hero{background-color:#101010}
+  .hero-inner{
+    grid-template-rows:minmax(72vw,auto) 48vw auto;
+    background-image:
+      linear-gradient(180deg,transparent 63%,rgba(231,76,0,.08) 70%,rgba(16,16,16,.5) 88%,#101010 100%),
+      url('assets/hero-yce-mobile.webp');
+    background-color:#e74c00;
+  }
+  .hero-benefits{
+    padding:10px 20px 22px;
+    gap:13px 14px;
+    background:linear-gradient(180deg,transparent 0%,rgba(16,16,16,.18) 38%,rgba(16,16,16,.72) 100%);
+  }
+  .hero-benefits li{gap:8px}
+  .hero-benefits strong{line-height:1.22}
+  .hero-benefits li span{line-height:1.25;margin-top:2px}
+}
+
+@media(max-width:360px){
+  .hero-benefits{gap:11px 12px;padding-left:16px;padding-right:16px}
+}
+
+/* Final mobile alignment and contact-section refinement. */
+@media(max-width:700px){
+  .header-inner{justify-content:space-between;gap:8px}
+  .header-inner>a:first-child{margin-right:auto}
+  .header-inner .header-instagram{margin-left:12px}
+  .header-inner .header-contact,.header-inner .menu-toggle{margin-left:0}
+  .service-tabs [aria-selected=true]{background:var(--orange)!important;color:#080808!important;border-color:var(--orange)!important;box-shadow:none!important}
+  .contact{margin-top:16px;padding-top:42px;overflow:visible}
+  .contact .section-top{margin-bottom:30px}
+  .contact-title{align-items:flex-start}
+  .contact-title h2{font-size:clamp(2.35rem,10vw,3.8rem);line-height:.94;letter-spacing:-.045em}
+}
