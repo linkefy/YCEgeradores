@@ -48,33 +48,38 @@
   });
   const allModes=['venda','locacao','manutencao'];
   const products=[
-    {brand:'Gerapro',image:'gerapro5.webp',modes:allModes},
-    {brand:'Buffalo',image:'buffalo1.webp',modes:allModes},
-    {brand:'Toyama',image:'toyama1.webp',modes:allModes},
-    {brand:'Gerapro',image:'gerapro2.webp',modes:['locacao','manutencao']},
-    {brand:'Gerapro',image:'gerapro3.webp',modes:['locacao','manutencao']},
-    {brand:'Gerapro',image:'gerapro.webp',modes:['locacao','manutencao']}
+    {brand:'YCE',name:'Equipamento 01',image:'yce-catalogo-novo-01.webp',modes:allModes},
+    {brand:'YCE',name:'Equipamento 02',image:'yce-catalogo-novo-02.webp',modes:allModes},
+    {brand:'YCE',name:'Equipamento 03',image:'yce-catalogo-novo-03.webp',modes:allModes},
+    {brand:'YCE',name:'Equipamento 04',image:'yce-catalogo-novo-04.webp',modes:allModes},
+    {brand:'YCE',name:'Equipamento 05',image:'yce-catalogo-novo-05.webp',modes:allModes},
+    {brand:'YCE',name:'Equipamento 06',image:'yce-gerador-carenagem-cinza-laranja.webp',modes:allModes},
+    {brand:'YCE',name:'Equipamento 07',image:'yce-gerador-cabinado-veneziana.webp',modes:allModes},
+    {brand:'YCE',name:'Equipamento 08',image:'yce-gerador-rodas-painel-lateral.webp',modes:allModes},
+    {brand:'YCE',name:'Equipamento 09',image:'yce-gerador-compacto-painel-aberto.webp',modes:allModes},
+    {brand:'YCE',name:'Equipamento 10',image:'yce-gerador-industrial-carenagem-fechada.webp',modes:allModes},
+    {brand:'YCE',name:'Equipamento 11',image:'yce-gerador-cabinado-base.webp',modes:allModes}
   ];
   const modeLabels={venda:'Venda',locacao:'Locação',manutencao:'Manutenção'};
   let available=products.map((_,i)=>i),selected=0;
   products.forEach((product,i)=>{
     const button=document.createElement('button');
     button.type='button';button.dataset.product=String(i);
-    button.setAttribute('aria-label','Selecionar equipamento '+(i+1)+': '+product.brand);
+    button.setAttribute('aria-label','Selecionar equipamento '+String(i+1).padStart(2,'0'));
     const image=document.createElement('img');image.src='assets/'+product.image;image.alt='';image.loading='lazy';image.width=120;image.height=70;
-    button.append(image,document.createTextNode(String(i+1).padStart(2,'0')+' / '+product.brand));
+    button.append(image,document.createTextNode(String(i+1).padStart(2,'0')));
     button.addEventListener('click',()=>selectProduct(i));
     $('.product-thumbs').append(button);
   });
   function selectProduct(index,withMotion=true){
     selected=index;
     const p=products[index],modes=p.modes.map(m=>modeLabels[m]).join(' · ');
-    $('#product-image').src='assets/'+p.image;$('#product-image').alt='Gerador '+p.brand;
+    $('#product-image').src='assets/'+p.image;$('#product-image').alt='Equipamento '+String(index+1).padStart(2,'0');
     $('.product-brand-back').textContent=p.brand.toUpperCase();
-    $('#product-name').textContent='Gerador '+p.brand;
+    $('#product-name').textContent=String(index+1).padStart(2,'0');
     $('#product-modes').textContent=modes;
     $('#product-count').textContent=String(available.indexOf(index)+1).padStart(2,'0')+' / '+String(available.length).padStart(2,'0');
-    $('#product-quote').href=wa('Olá, gostaria de mais informações sobre o gerador '+p.brand+'. Referência da imagem: '+new URL('assets/'+p.image,location.href).href);
+    $('#product-quote').href=wa('Olá, gostaria de mais informações sobre o equipamento '+String(index+1).padStart(2,'0')+'. Referência da imagem: '+new URL('assets/'+p.image,location.href).href);
     $$('[data-product]').forEach((button,i)=>{button.hidden=!available.includes(i);button.setAttribute('aria-pressed',String(i===index))});
     if(withMotion){animate($('#product-image'));animate($('#product-name'))}
   }
