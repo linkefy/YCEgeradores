@@ -53,12 +53,10 @@
     {brand:'YCE',name:'Equipamento 03',image:'yce-catalogo-novo-03.webp',modes:allModes},
     {brand:'YCE',name:'Equipamento 04',image:'yce-catalogo-novo-04.webp',modes:allModes},
     {brand:'YCE',name:'Equipamento 05',image:'yce-catalogo-novo-05.webp',modes:allModes},
-    {brand:'YCE',name:'Equipamento 06',image:'yce-gerador-carenagem-cinza-laranja.webp',modes:allModes},
     {brand:'YCE',name:'Equipamento 07',image:'yce-gerador-cabinado-veneziana.webp',modes:allModes},
     {brand:'YCE',name:'Equipamento 08',image:'yce-gerador-rodas-painel-lateral.webp',modes:allModes},
     {brand:'YCE',name:'Equipamento 09',image:'yce-gerador-compacto-painel-aberto.webp',modes:allModes},
     {brand:'YCE',name:'Equipamento 10',image:'yce-gerador-industrial-carenagem-fechada.webp',modes:allModes},
-    {brand:'YCE',name:'Equipamento 11',image:'yce-gerador-cabinado-base.webp',modes:allModes}
   ];
   const modeLabels={venda:'Venda',locacao:'Locação',manutencao:'Manutenção'};
   let available=products.map((_,i)=>i),selected=0;

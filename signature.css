@@ -190,3 +190,15 @@ main img.service-icon{display:block;width:36px;height:36px;flex:0 0 36px;object-
 .event-reel .event-video{z-index:1;}
 /* Event cards stay fixed; the row is manually scrollable. */
 .events-ready .events-track,.events-static .events-track{animation:none!important;transform:none!important;}
+
+/* Extra line spacing for accented headings in the Atendimento section. */
+.story h2,.chapter h3{line-height:1.2}
+
+
+/* Image carousel uses the same portrait frame as the event videos. */
+.event-photo-carousel .event-still{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;border-radius:0;background:#080808}
+.event-photo-carousel .event-still[hidden]{display:none}
+.event-photo-arrow{position:absolute;z-index:3;top:50%;translate:0 -50%;display:grid;place-items:center;width:42px;height:42px;padding:0;border:1px solid #ffffff90;border-radius:50%;background:#080808b8;color:#fff;font:400 30px/1 Inter,Arial,sans-serif;cursor:pointer}
+.event-photo-arrow:hover{background:var(--orange);color:#080808;border-color:var(--orange)}
+.event-photo-prev{left:12px}.event-photo-next{right:12px}
+.event-photo-count{position:absolute;z-index:3;bottom:12px;left:50%;translate:-50% 0;padding:5px 10px;border:1px solid #ffffff50;border-radius:999px;background:#080808b8;color:#fff;font-size:.75rem;letter-spacing:.08em}
